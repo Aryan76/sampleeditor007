@@ -93,8 +93,9 @@ if (window.self === window.top) {
 
 	var sdk = new BlockSDK(['blocktester.herokuapp.com', 'localhost', 'marketingcloudapps.com'], true);
 
+	var content = document.getElementById('').innerHTML;
 	sdk.getContent(function (content) {
-		quill.root.innerHTML = <p><b>sdhfisdf</b></p>;
+		quill.root.innerHTML = content;
 
 		function saveText() {
 			var html = quill.root.innerHTML;

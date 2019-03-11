@@ -93,7 +93,7 @@ if (window.self === window.top) {
 
 	var sdk = new BlockSDK(['blocktester.herokuapp.com', 'localhost', 'marketingcloudapps.com'], true);
 
-	var content = document.getElementById('').innerHTML;
+	var content = document.getElementById('#editor-container').innerHTML;
 	sdk.getContent(function (content) {
 		quill.root.innerHTML = content;
 
